@@ -1,4 +1,4 @@
-const router = require('express').Router()
+/*const router = require('express').Router()
 const pool = require('../db')
 
 router.get('/', async (req, res) => {
@@ -19,6 +19,19 @@ router.get('/', async (req, res) => {
     })
 
   }
+
+})
+
+module.exports = router
+*/
+
+const router = require('express').Router()
+
+router.get('/', async (req, res) => {
+
+    res.status(200).json({
+        message: 'Backend working'
+    })
 
 })
 
